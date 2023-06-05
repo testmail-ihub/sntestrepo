@@ -1,2 +1,2 @@
 # readme update
-NEW DEFECT FIX
+NEW DEFECT 2 FIX
