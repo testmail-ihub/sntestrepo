@@ -1,2 +1,2 @@
 # readme update
-DEFECT 5 FIX - DEF0001005 - 1
+DEFECT 6 FIX - DEF0001006 
