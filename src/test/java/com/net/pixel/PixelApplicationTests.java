@@ -29,7 +29,6 @@ class PixelApplicationTests {
 		String[] array = bufferedReader.lines().collect(Collectors.joining()).split(",");
 		for(String s: array){
 			log.info(s);
-			log.info(s);
 		}
 	}
 
