@@ -24,6 +24,7 @@ class PixelApplicationTests {
 	void print() throws IOException {
 		Resource resource = new ClassPathResource("test.txt");
 		File file = resource.getFile();
+		File fileNew = resource.getFile();
 		BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
 
 		String[] array = bufferedReader.lines().collect(Collectors.joining()).split(",");
