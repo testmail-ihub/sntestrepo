@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+\nh1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.balance-container, .transaction-container, .input-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.balance-container h2, .transaction-container h2, .input-container h2 {
+    margin-top: 0;
+}
+
+#balance {
+    font-weight: bold;
+    color: #00698f;
+}
+
+#transaction-history {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#transaction-history li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#transaction-history li:last-child {
+    border-bottom: none;
+}
+
+#transaction-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#transaction-form input[type="radio"] {
+    margin: 10px;
+}
+
+#transaction-form label {
+    margin: 10px;
+}
+
+#transaction-form input[type="text"], #transaction-form input[type="number"] {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-transaction {
+    padding: 10px 20px;
+    background-color: #00698f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-transaction:hover {
+    background-color: #004751;
+}
