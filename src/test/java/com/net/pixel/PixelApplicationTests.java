@@ -1,6 +1,6 @@
 package com.net.pixel;
 
-import lombok.extern.slf4j.Slf4j;
+//import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.core.io.ClassPathResource;
@@ -24,12 +24,10 @@ class PixelApplicationTests {
 	void print() throws IOException {
 		Resource resource = new ClassPathResource("test.txt");
 		File file = resource.getFile();
+		File fileNew = resource.getFile();
 		BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
 
 		String[] array = bufferedReader.lines().collect(Collectors.joining()).split(",");
-		for(String s: array){
-			log.info(s);
-		}
 	}
 
 }
