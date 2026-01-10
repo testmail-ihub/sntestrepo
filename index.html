@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+    </header>
+    <main>
+        <section class="input-section">
+            <form id="transaction-form">
+                <input type="radio" id="income" name="type" value="income">
+                <label for="income">Income</label>
+                <input type="radio" id="expense" name="type" value="expense">
+                <label for="expense">Expense</label>
+                <input type="text" id="description" placeholder="Description">
+                <input type="number" id="amount" placeholder="Amount">
+                <button id="add-transaction">Add Transaction</button>
+            </form>
+        </section>
+        <section class="balance-section">
+            <h2>Balance: <span id="balance">0.00</span></h2>
+        </section>
+        <section class="history-section">
+            <h2>Transaction History</h2>
+            <ul id="transaction-history"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
